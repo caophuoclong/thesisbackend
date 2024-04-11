@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  thesis-mongo:
+    image: mongo:latest
+    container_name: thesis-mongo
+    restart: always
+    ports:
+      - 27007:27017
+    volumes:
+      - ./data:/data/db
